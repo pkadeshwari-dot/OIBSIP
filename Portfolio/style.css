@@ -1,0 +1,554 @@
+body{
+    background-color: silver;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color:silver;
+    display: flex;
+}
+.col1{
+    height: 80px;
+    width: 10%;
+    text-align: center;
+    padding-top: 13px;
+}
+.col1 button{
+    width: 70px;
+    height: 70px;
+    background-color:#0A192F;
+    color: white;
+    font-size: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-family:bebas neue;
+
+}
+ .col1 button:hover {
+      background-color:burlywood;
+    }
+.col2{
+    height: 80px;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    gap: 14%;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    
+}
+.col2 a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .col1 {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .col2 {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  .col2 a {
+    font-size: 18px;
+  }
+}
+#home{
+    height: 400px;
+    width: 100%;
+}
+.col3{
+    height: 400px;
+    width: 50%;
+    margin: 8%;
+}
+h1{
+    font-size: 45px;
+    color:#0A192F ;
+}
+h2{
+    font-size: 35px;
+    padding-left: 0px;
+}
+p{
+    font-size: 23px;
+    line-height: 40px;
+}
+.btn{
+    height: 50px;
+    width: 50% ;
+    display: inline-flex;
+    gap: 25%;
+    margin: 5%;
+}
+.btn a{
+    text-decoration: none;
+    padding-left: 0px;
+    padding-top: 10px;
+    border: 2px solid ;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+.btn a:first-child {
+    background-color:#0A192F ;
+    color: white;
+}
+.btn a:first-child:hover {
+    background-color: #0A192F;
+    transform: scale(1.05);
+}
+.btn a:last-child {
+    background-color: transparent;
+    color:#0A192F;
+    border: 2px solid #0A192F;
+}
+.btn a:last-child:hover {
+    background-color: #0A192F;
+    color: white;
+    transform: scale(1.05);
+}
+#about {
+    width: 100%;
+    height: auto;
+}
+
+.col4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+}
+
+.profile {
+    padding-top: 60px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.profile img {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+
+.intro {
+    margin: 0;
+    padding: 0;
+}
+
+.intro h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #0A192F;
+}
+
+.intro p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+    text-align: justify;
+    padding-left: 100px;
+}
+
+.skills {
+    margin-top: 0;
+    padding-top: 0;
+    height: auto;
+    width: 100%;
+}
+
+.skills h3 {
+    font-size: 30px;
+    padding-left: 34%;
+    color: #0A192F;
+    margin: 0;
+}
+
+.skills p {
+    word-spacing: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top:20px;
+    padding-left: 100px;
+}
+
+.project {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    color: #0A192F;
+    padding-left: 30%;
+    font-size: 30px;
+}
+
+.project p {
+    padding-left: 100px;
+    width: 68%;
+    font-size: 20px;
+    line-height: 35px;
+}
+@media (max-width: 768px) {
+  /* Home Section */
+  #home, .col3 {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    text-align: center;
+  }
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  p { font-size: 18px; line-height: 30px; }
+
+  .btn {
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .btn a { font-size: 18px; padding: 8px 16px; }
+
+  /* About Section */
+  .col4 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile {
+    padding: 0;
+  }
+  .intro p {
+    width: 90%;
+    padding: 0;
+  }
+
+  /* Skills Section */
+  .skills h3 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .skills p {
+    padding-left: 0;
+    text-align: center;
+    word-spacing: 10px;
+  }
+
+  /* Project Section */
+  .project h3 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .project p {
+    width: 90%;
+    padding-left: 0;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 26px; }
+  h2 { font-size: 22px; }
+  p { font-size: 16px; line-height: 26px; }
+  .btn a { font-size: 16px; }
+}
+
+#education{
+    width: 100%;
+}
+.edu-intro{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+.edu-intro h3{
+    text-align: center;
+    font-size: 30px;
+    color: #0A192F;
+}
+.edu-intro p{
+    font-size: 20px;
+    line-height: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
+    word-spacing: 5px;
+}
+.studies{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 60px ;
+  font-family: "Poppins", sans-serif;
+  margin-top: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 25px;
+}
+.degree{
+    line-height: 30px;
+}
+.degree h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.degree h4{
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 15px;
+}
+.institution{
+    text-align: left;
+    line-height: 60px;
+    margin-top: 0;
+}
+.institution h3{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+@media (max-width: 768px) {
+  .studies {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .degree, .institution {
+    text-align: center;
+  }
+  .studies::before {
+    display: none;
+  }
+  .degree h3, .institution h3 {
+    font-size: 1rem;
+  }
+}
+#code{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    padding: 40px;
+}
+.code-skill,.proff-skill{
+    height: 450px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.code-skill h2,.proff-skill h2{
+    text-align: center;
+    font-size: 35px;
+    font-family:'Courier New', Courier, monospace;
+}
+.progress{
+    margin-bottom: 15px;
+}
+.progress h3{
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    font-family:sans-serif;
+    color: #0A192F;
+}
+.bar{
+    height: 10px;
+    background:grey;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.bar span{
+    display: block;
+  height: 100%;
+  border-radius: 5px;
+   transition: width 1.2s ease-in-out;
+   background-color: #0A192F;
+   opacity: 0.6;
+}
+
+.html { width: 90%; }
+.css { width: 80%; }
+.js { width: 75%; }
+.c { width: 70%; }
+
+.web { width: 90%; }
+.uiux { width: 95%; }
+.git { width: 70%; }
+.prompt { width: 75%; }
+
+@media (max-width: 768px) {
+  #code {
+    flex-direction: column;
+    align-items: center;
+  }
+  .code-skill, .proff-skill {
+    width: 90%;
+  }
+}
+#contact{
+    height: auto;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#contact h2{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0A192F;
+    margin-bottom: 30px;
+}
+#contact-form{
+    display: grid;
+    grid-template-columns:100px 1fr;
+    gap:15px 20px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+ #contact-form label{
+    margin-top: 10px;
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0A192F;
+ }
+ #contact-form input,#contact-form textarea{
+    height: 30px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+ }
+ #contact-form button{
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 10px 20px;
+    background-color: #0A192F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+ @media (max-width: 768px) {
+    #contact-form{
+        grid-template-columns: 1fr; /* stack labels and inputs vertically */
+        padding: 30px 15px;
+    }
+    #contact-form label{
+        text-align: left; /* align labels left for stacked layout */
+    }
+    #contact-form input,
+    #contact-form textarea{
+        max-width: 100%; /* take full available width */
+        margin: 5px 0;
+    }
+    #contact h2{
+        font-size: 26px;
+    }
+}
+@media (max-width: 480px) {
+    #contact{
+        padding: 30px 10px;
+    }
+    #contact h2{
+        font-size: 22px;
+    }
+    #contact-form{
+        padding: 20px 10px;
+    }
+}
+#project{
+    width: 100%;
+    height: auto;
+}
+#project h2{
+    text-align: center;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0A192F;
+}
+.section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.pro1{
+    height: auto;
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+}
+.pro1 h3,.pro2 h3{
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pro2{
+    height: auto;
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+}
+.pro1 a,.pro2 a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;  
+}
+.pro1 .button,.pro2 .button{
+  padding: 10px 10px;
+  background-color:#0A192F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100px;
+  margin-left: 260px;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pro1, .pro2 {
+    width: 90%;
+  }
+  .pro1 .button, .pro2 .button {
+    margin: 15px auto 0;
+  }
+  #project h2 {
+    font-size: 30px;
+  }
+  .pro1 h3, .pro2 h3 {
+    font-size: 24px;
+  }
+}
